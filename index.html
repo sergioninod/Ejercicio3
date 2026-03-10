@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Oriente | Formación Tecnológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description"
+        content="Talento Tech Oriente - Formación intensiva en tecnología para el futuro. Inscripciones abiertas para bootcamps de programación, IA y análisis de datos.">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="https://res.cloudinary.com/dprv6nxj1/image/upload/v1772762518/LOGO-TALENTO-ORIENTE-COLOR-SOMBRA_Nero_AI_Background_Remover_transparent_rejncg.png"
+                alt="Talento Tech Oriente Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Bootcamps</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="cta-btn">Inscribirse</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Impulsa tu Futuro Digital con Talento Tech</h1>
+                <p>Únete a los bootcamps de formación intensiva diseñados para convertirte en el profesional que la
+                    industria tecnológica demanda hoy.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#cursos" class="cta-btn">Ver Bootcamps</a>
+                    <a href="#contacto" class="cta-btn"
+                        style="background: transparent; border: 2px solid var(--accent-color);">Más Información</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootcamps Section -->
+        <section id="cursos">
+            <div class="section-title">
+                <h2>¿QUÉ OFRECE TALENTO TECH?</h2>
+                <p>Formación especializada mediante Bootcamps intensivos de 3 meses en seis áreas clave:</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Programacion.png"
+                        alt="Programación">
+                    <h3>Programación</h3>
+                    <p>El bootcamp de Programación te proporcionará habilidades esenciales para el desarrollo de
+                        software, desde la creación de aplicaciones web hasta la gestión de bases de datos.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Inteligencia-Artificial.png"
+                        alt="Inteligencia Artificial">
+                    <h3>Inteligencia Artificial</h3>
+                    <p>El bootcamp de Inteligencia Artificial te sumergirá en el mundo de la IA, ofreciendo una
+                        comprensión profunda de las tecnologías de aprendizaje automático y procesamiento del lenguaje
+                        natural.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Analisis-de-Datos.png"
+                        alt="Análisis de Datos">
+                    <h3>Análisis de Datos</h3>
+                    <p>El bootcamp de Análisis de Datos te dotará de habilidades cruciales para extraer conocimientos
+                        significativos de grandes conjuntos de datos.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Arquitectura-en-la-Nube.png"
+                        alt="Arquitectura en la Nube">
+                    <h3>Arquitectura en la Nube</h3>
+                    <p>El bootcamp de formación en Arquitectura en la Nube te preparará para diseñar y gestionar
+                        entornos tecnológicos escalables y eficientes en la nube.</p>
+                </div>
+                <!-- New Bootcamps -->
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Ciberseguridad.png"
+                        alt="Ciberseguridad">
+                    <h3>Ciberseguridad</h3>
+                    <p>El bootcamp de ciberseguridad te capacitará sobre protección de redes, manejo de incidentes,
+                        criptografía y defensa contra ciberataques para asegurar sistemas informáticos eficazmente.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.talentotechoriente.com/wp-content/uploads/2024/07/Blockchain-1.png"
+                        alt="Blockchain">
+                    <h3>Blockchain</h3>
+                    <p>El bootcamp de Blockchain te sumergirá en el fascinante mundo de la tecnología de bloques,
+                        ofreciendo una comprensión profunda de las transacciones seguras y descentralizadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contacto">
+            <div class="section-title">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes dudas? Déjanos un mensaje y te contactaremos a la brevedad.</p>
+            </div>
+            <div class="contact-container">
+                <form id="contactForm" action="https://formspree.io/f/meeradrz" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        <span class="error-message" id="error-nombre">Este campo es obligatorio</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="documento">Número de Documento</label>
+                        <input type="text" id="documento" name="documento" placeholder="C.C. / T.I / C.E.">
+                        <span class="error-message" id="error-documento">Ingresa un número válido</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                        <span class="error-message" id="error-correo">Ingresa un correo válido</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">Número de Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="3XX XXX XXXX">
+                        <span class="error-message" id="error-celular">Ingresa un número de celular válido</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="nivel-educativo">Nivel Educativo</label>
+                        <select id="nivel-educativo" name="nivel-educativo">
+                            <option value="">Selecciona una opción</option>
+                            <option value="bachiller">Bachiller</option>
+                            <option value="tecnico">Técnico / Tecnólogo</option>
+                            <option value="universitario">Universitario</option>
+                            <option value="posgrado">Posgrado</option>
+                        </select>
+                        <span class="error-message" id="error-nivel-educativo">Este campo es obligatorio</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección de Residencia</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Calle / Carrera #">
+                        <span class="error-message" id="error-direccion">Este campo es obligatorio</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="departamento">Departamento</label>
+                            <input type="text" id="departamento" name="departamento" placeholder="Ej: Santander">
+                            <span class="error-message" id="error-departamento">Obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="municipio">Municipio</label>
+                            <input type="text" id="municipio" name="municipio" placeholder="Ej: Bucaramanga">
+                            <span class="error-message" id="error-municipio">Obligatorio</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bootcamp-interes">Bootcamp de tu interés</label>
+                        <select id="bootcamp-interes" name="bootcamp-interes">
+                            <option value="">Selecciona un bootcamp</option>
+                            <option value="programacion">Programación</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                            <option value="datos">Análisis de Datos</option>
+                            <option value="nube">Arquitectura en la Nube</option>
+                            <option value="ciberseguridad">Ciberseguridad</option>
+                            <option value="blockchain">Blockchain</option>
+                        </select>
+                        <span class="error-message" id="error-bootcamp-interes">Selecciona una opción</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje (Opcional)</label>
+                        <textarea id="mensaje" name="mensaje" rows="3"
+                            placeholder="¿Tienes alguna duda adicional?"></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <span class="footer-logo">TALENTO TECH ORIENTE</span>
+                <p>Formamos la próxima generación de líderes tecnológicos en la región oriente.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Bootcamps</a></li>
+                    <li><a href="#contacto">Inscripción</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@talentotechoriente.com</li>
+                    <li><i class="fas fa-phone"></i> +57 321 000 0000</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bucaramanga, Santander</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Talento Tech Oriente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        (function () {
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...arguments) => {
+                    if (!window.chatbase.q) { window.chatbase.q = [] }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") { return target.q }
+                        return (...args) => target(prop, ...args)
+                    }
+                })
+            }
+            const onLoad = function () {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "StVv1IyIo74iSlsOcP8Ie";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if (document.readyState === "complete") { onLoad() }
+            else { window.addEventListener("load", onLoad) }
+        })();
+    </script>
+</body>
+
+</html>
