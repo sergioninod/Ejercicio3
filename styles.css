@@ -354,8 +354,15 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .comment-header {
@@ -380,7 +387,8 @@ footer {
     font-size: 0.95rem;
 }
 
-.loading, .no-comments {
+.loading,
+.no-comments {
     text-align: center;
     padding: 2rem;
     color: var(--text-gray);
@@ -510,6 +518,31 @@ footer {
     color: var(--text-gray);
 }
 
+/* Password Toggle Styles */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    padding-right: 3rem !important; /* Make space for the eye icon */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-gray);
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.toggle-password:hover {
+    color: var(--accent-color);
+}
+
 .hidden {
     display: none !important;
 }
@@ -541,7 +574,8 @@ footer {
         padding: 3rem 5%;
     }
 
-    .contact-container, .auth-container {
+    .contact-container,
+    .auth-container {
         padding: 2rem;
     }
-}
+}

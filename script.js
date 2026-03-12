@@ -135,6 +135,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginHeaderBtn = document.getElementById('loginHeaderBtn');
     const logoutBtn = document.getElementById('logoutBtn');
 
+    // Password Visibility Toggle Logic
+    const toggleButtons = document.querySelectorAll('.toggle-password');
+    toggleButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const passwordInput = document.getElementById(targetId);
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                this.classList.remove('fa-eye');
+                this.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                this.classList.remove('fa-eye-slash');
+                this.classList.add('fa-eye');
+            }
+        });
+    });
+
     // Tab Switching Logic
     if (tabLogin && tabRegister) {
         tabLogin.addEventListener('click', () => {
@@ -170,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
             userEmailSpan.textContent = user.email;
             userStatus.classList.remove('user-status-hidden');
             loginHeaderBtn.style.display = 'none';
-            
+
             // Show comment form, hide promo
             if (commentForm) commentForm.classList.remove('hidden');
             if (commentLoginPromo) commentLoginPromo.classList.add('hidden');
@@ -294,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load comments
     async function loadComments() {
         commentsList.innerHTML = '<div class="loading">Cargando comentarios...</div>';
-        
+
         try {
             const { data, error } = await _supabase
                 .from('comments')
@@ -337,11 +356,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (commentForm) {
         commentForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const nameInput = document.getElementById('comment-name');
             const textInput = document.getElementById('comment-text');
             const submitBtn = commentForm.querySelector('button');
-            
+
             const name = nameInput.value.trim();
             const content = textInput.value.trim();
 
